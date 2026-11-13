@@ -1,63 +1,71 @@
 # Yumberry Bowl Franchising
 
-A responsive franchise recruitment website for Yumberry Bowl. Built with React, TypeScript, Vite, and custom CSS.
+A responsive **franchise recruitment website concept** for Yumberry Bowl, a smoothie bowl business founded in Grants Pass, Oregon. The project presents the brand, franchise support, available business formats, and inquiry process through a clear, visually focused single-page experience.
 
-The site includes local image assets, mobile navigation, expandable concept details, and restrained scroll effects.
+<p>
+  <img src="https://img.shields.io/badge/React-19-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React 19" />
+  <img src="https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Vite-8-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Status-Client%20Review-238636?style=flat-square" alt="Project status: Client Review" />
+</p>
 
-## Development
+## Project Overview
 
-Use Node.js 22.12 or newer.
+This project redesigns Yumberry Bowl's existing franchise website to make the opportunity easier for prospective owners to understand. It preserves the established logo, colors, and food photography while improving the page layout, navigation, and presentation of franchise information.
 
-```bash
-npm ci
-npm run dev
-```
+The focus is a practical recruitment website: explain the business, organize the reasons to franchise, and give interested visitors a straightforward way to start a conversation.
 
-```bash
-npm run check
-npm test
-npm run build
-npm run preview
-```
+## Project Goals
 
-The production files are written to `dist/`. Relative asset paths allow the build to run at a domain root or a GitHub Pages project URL.
+- Present franchise information in concise, well-formatted sections.
+- Make training, location guidance, marketing, and operating resources easy to compare.
+- Preserve Yumberry's recognizable identity while improving visual consistency.
+- Create a balanced layout with even spacing, clear headings, and strong food imagery.
+- Support comfortable browsing on phones, tablets, and desktop screens.
+- Reduce friction between learning about the opportunity and making an inquiry.
+- Keep franchise claims grounded in published materials and clearly identify items requiring review.
 
-## Project structure
+## Features
 
-- `src/App.tsx` assembles the page and shares the selected franchise format with the inquiry form.
-- `src/components/` contains the header, page sections, inquiry form, and footer.
-- `src/content.ts` holds contact details and franchise support points.
-- `src/inquiry.ts` builds the email draft URL.
-- `src/styles.css` contains the layout, colors, typography, and responsive rules.
-- `public/images/` contains the logo and bowl photography.
+- Sticky navigation with direct links to each major section
+- Responsive hero with bowl photography and decorative fruit illustrations
+- Subtle scroll movement with reduced-motion support
+- Expandable information about the business concept
+- Organized franchise support cards with specific points
+- Storefront and mobile format sections
+- Four-step introduction to the inquiry process
+- Franchise format selection that carries into the inquiry form
+- Required-field validation and an email-draft handoff
+- Privacy notice and a link to Yumberry's existing inquiry form
+- Semantic page structure, keyboard-accessible controls, and mobile navigation
 
-## Inquiry form
+## Design Approach
 
-The form prepares an email draft addressed to Yumberry. It does not submit, save, or send inquiries. Visitors must open the draft in their email app and send it themselves. There is also a link to the existing Yumberry inquiry form.
+The design centers on Yumberry's food and brand identity. White backgrounds, rounded shapes, turquoise accents, and bright photography establish a fresh visual style without overwhelming the franchise information.
 
-Changing a form field invalidates the prepared draft so it cannot be mistaken for an updated message. Choosing a storefront or mobile format fills the territory field. No CRM, email service, or tracking service is included.
+Copy is kept direct. Support points are grouped into readable cards, and each section has a defined purpose. Decorative movement is restrained so the content remains the main focus.
 
-## Deployment
+## Technology
 
-The GitHub Actions workflow checks and builds pushes and pull requests. To publish to GitHub Pages:
+| Area | Technology |
+| --- | --- |
+| UI | React 19 |
+| Language | TypeScript 5.9 |
+| Build Tool | Vite 8 |
+| Styling | Custom CSS |
+| Assets | Local WebP images and SVG illustrations |
+| Validation | TypeScript checks and inquiry URL tests |
 
-1. Approve the site for public access and enable Pages in the repository settings, using GitHub Actions as the source.
-2. Run the **Website** workflow manually with **Deploy to GitHub Pages** enabled.
+## Project Organization
 
-The workflow does not publish automatically. You can also upload the contents of `dist/` to another static host. This project does not depend on ChatGPT Sites or its hosting configuration.
+Page sections are separated into reusable components in `src/components/`. Shared contact information and franchise support points are maintained in `src/content.ts`, while `src/styles.css` contains the visual design and responsive rules. The email draft logic is isolated in `src/inquiry.ts`.
 
-## Content review
+## Current Scope
 
-This is a client-review website, not an approved franchise offering. The page retains `noindex` until public launch is approved.
+The frontend is prepared for client review. The inquiry form creates an email draft; it does not save or send submissions. Visitors review and send the message in their email application, or follow the link to the existing inquiry form.
 
-Before launch, confirm the current support terms, franchise formats, territory availability, contact information, and image permissions. Have Yumberry's franchise team and legal counsel review the offering language and final privacy policy. Connect and test an approved form service if direct submissions are needed.
+Franchise offering language, support terms, business formats, contact information, privacy wording, and asset permissions require final approval before an official launch. The project does not include financial projections, earnings promises, a CRM, or a franchise management backend.
 
-No financial projections, investment figures, or earnings promises are included.
+## Content and Assets
 
-## Sources and assets
-
-- [Yumberry Bowl](https://www.yumberrybowl.com/)
-- [Existing franchise website](https://yumberrybowl.wixsite.com/franchising)
-- [Published franchise support](https://yumberry.weebly.com/franchise-support.html)
-
-The logo and photography came from Yumberry's websites and remain subject to their owners' rights. Their inclusion here does not grant a license for unrelated use. The small fruit illustrations are decorative, not product or nutritional claims.
+Brand information and imagery are drawn from [Yumberry Bowl](https://www.yumberrybowl.com/), its [existing franchise website](https://yumberrybowl.wixsite.com/franchising), and its [published franchise support materials](https://yumberry.weebly.com/franchise-support.html). The logo and photography remain subject to their owners' rights.
