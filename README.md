@@ -2,7 +2,7 @@
 
 A responsive franchise recruitment website for Yumberry Bowl. Built with React, TypeScript, Vite, and custom CSS.
 
-The project follows the same section-based structure as [Umoja Pamoja](https://github.com/IPFizzy/umoja-pamoja-website). It includes the current Yumberry design, local image assets, mobile navigation, expandable concept details, and restrained scroll effects.
+The site includes local image assets, mobile navigation, expandable concept details, and restrained scroll effects.
 
 ## Development
 
